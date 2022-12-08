@@ -1,0 +1,1 @@
+package com.example.githubuserapp.data_modelimport android.os.Parcelableimport kotlinx.parcelize.Parcelize@Parcelizedata class GithubUserData(    var name : String,    var username : String,    var location : String,    var repositori : String,    var company : String,    var follower : String,    var following : String,    var avatar : Int) : Parcelable

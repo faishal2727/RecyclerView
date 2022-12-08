@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfilActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:background="@drawable/bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/my_picture"
+            app:civ_border_color="@color/my_color3"
+            app:civ_border_width="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_nama_profil"
+            style="@style/AppTheme.TextMain"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Muh.Faishal Rizal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/avatar" />
+
+        <TextView
+            android:id="@+id/tv_group_profil"
+            style="@style/AppTheme.TextMain"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Group :A04"
+            app:layout_constraintEnd_toEndOf="@+id/tv_nama_profil"
+            app:layout_constraintStart_toStartOf="@+id/tv_nama_profil"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama_profil" />
+
+        <TextView
+            android:id="@+id/tv_email_profil"
+            style="@style/AppTheme.TextMain"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="A124X0201@dicoding.org"
+            app:layout_constraintEnd_toEndOf="@+id/tv_group_profil"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_group_profil" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
